@@ -51,8 +51,8 @@ flowchart TB
     Ingest --> Embed
     Embed -->|vectors| VDB
 
-    style Untrusted fill:#3a1414,stroke:#c0392b
-    style Data fill:#14243a,stroke:#2980b9
+    style Untrusted fill:#3a1414,stroke:#c0392b,color:#fff
+    style Data fill:#14243a,stroke:#2980b9,color:#fff
 ```
 
 **Trust boundaries marked above:** (1) user → app at `Auth`, where role is decided; (2) document →

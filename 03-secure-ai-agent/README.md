@@ -21,8 +21,8 @@ flowchart LR
     Agent -->|unrestricted| Tool3[Asset Inventory Tool]
     Tool3 -->|accesses restricted file| Restricted[(Restricted Asset\nData)]
 
-    style Doc fill:#3a1414,stroke:#c0392b
-    style Restricted fill:#3a1414,stroke:#c0392b
+    style Doc fill:#3a1414,stroke:#c0392b,color:#fff
+    style Restricted fill:#3a1414,stroke:#c0392b,color:#fff
 ```
 
 The seeded document instructs the agent to ignore its rules and access a restricted file / misuse a
@@ -43,8 +43,8 @@ flowchart LR
     Gate --> Log[(Tool-call Log\nfor auditability)]
     Kill[[Emergency\nRevocation]] -.->|instantly kills access| Gate
 
-    style Doc fill:#3a2a14,stroke:#e67e22
-    style Tool3 fill:#3a1414,stroke:#c0392b,stroke-dasharray: 5 5
+    style Doc fill:#3a2a14,stroke:#e67e22,color:#fff
+    style Tool3 fill:#3a1414,stroke:#c0392b,color:#fff,stroke-dasharray: 5 5
 ```
 
 ## Attack

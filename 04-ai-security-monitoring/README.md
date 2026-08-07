@@ -28,7 +28,7 @@ flowchart LR
     Detections -->|match| Alert[Alert]
     Alert --> Playbook[Incident Playbook:\nvalidate -> preserve evidence ->\nrevoke identity/token ->\nassess exposure -> communicate]
 
-    style Playbook fill:#14243a,stroke:#2980b9
+    style Playbook fill:#14243a,stroke:#2980b9,color:#fff
 ```
 
 ## Detections to Engineer

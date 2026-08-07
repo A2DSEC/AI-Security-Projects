@@ -26,8 +26,8 @@ flowchart TB
     Ticket -->|fixed, verified by| Retest[Retest]
     Retest -->|closes loop back into| Register
 
-    style Finding fill:#3a1414,stroke:#c0392b
-    style Retest fill:#14243a,stroke:#2980b9
+    style Finding fill:#3a1414,stroke:#c0392b,color:#fff
+    style Retest fill:#14243a,stroke:#2980b9,color:#fff
 ```
 
 ## Components
