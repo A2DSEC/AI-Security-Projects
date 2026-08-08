@@ -15,7 +15,7 @@ create a service ticket, and query a fictional asset inventory.
 ```mermaid
 flowchart LR
     Doc[/Support Document\ncontains injected\ninstructions/] --> Agent
-    User([User]) -->|task| Agent[Agent\n= user's own identity\nno tool restrictions]
+    User([User]) -->|task| Agent["Agent\n(uses the user's own identity)\nno tool restrictions"]
     Agent -->|reads| Tool1[Read Docs Tool]
     Agent -->|unrestricted| Tool2[Create Ticket Tool]
     Agent -->|unrestricted| Tool3[Asset Inventory Tool]
@@ -33,7 +33,7 @@ tool. In the insecure design, it succeeds — an unauthorised action nobody appr
 ```mermaid
 flowchart LR
     Doc[/Support Document\nlabeled UNTRUSTED/] -->|input trust label| Agent
-    User([User]) -->|task| IdentityCheck[Agent Identity\n(distinct from user,\nattributable)]
+    User([User]) -->|task| IdentityCheck["Agent Identity\n(distinct from user,\nattributable)"]
     IdentityCheck --> Agent[Agent]
     Agent -->|allow-listed only| Gate{Tool Gateway\nresource-level\npermissions,\nleast privilege}
     Gate -->|scoped, short-lived\ncredential| Tool1[Read Docs Tool]
